@@ -1,0 +1,76 @@
+* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lilita One', cursive;
+    background-color: #31FDCA;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;   
+    width: 400px; 
+    background-color: #f7fcee;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;  
+}
+
+.btn_generate, .btn_copy {
+    background-color: rgb(58, 57, 57);
+    color: #ffffff;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.125rem;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.color_number {
+    font-size: 1.3rem;
+}
+
+.btn_generate {
+    margin-right: 10px;
+    background-color: #66920c;
+}
+
+.btn_generate:hover {
+    background-color: #65920cb6;
+}
+
+.btn_copy {
+    background-color: #fc1010;
+}
+
+.btn_copy:hover {
+    background-color: #fc1010b7;
+}
+
+@media screen and (max-width:375px){
+    .container {
+        width: 80%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn_generate {
+        margin-bottom: 10px
+    }
+}
