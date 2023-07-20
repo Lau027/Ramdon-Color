@@ -27,6 +27,11 @@ btnGenerate.addEventListener("click", () => {
 btnCopy.addEventListener("click", () => {
     
     console.log(navigator.clipboard.writeText(colorCode.textContent));
-    alert("Copy!")
+    Swal.fire({
+        title: "Copy!",
+        toast: true,
+        position: 'top',
+        backdrop: true,
+    })
 })
 
